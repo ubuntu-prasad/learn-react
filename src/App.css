@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  margin: auto;
+  text-align: left;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 0 10px;
 }
 
 .App-logo {
@@ -10,13 +14,34 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.todo-item-container {
+  border: 1px solid grey;
+  padding: 0 20px 10px 10px;
+  height: 75vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.todo-item-container button {
+  background-color:
+  transparent;
+  border: none;
+  color:red;
+}
+
+.todo-item-container p {
+  border: 1px solid grey;
+  padding: 20px;
+  box-shadow: 2px 2px black;
 }
 
 .App-link {
